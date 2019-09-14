@@ -1,4 +1,4 @@
-FROM node:10
+FROM amd64/node:10
 
 LABEL version="1.0.1"
 LABEL repository="http://github.com/heowc/action-hexo"
