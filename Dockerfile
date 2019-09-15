@@ -15,11 +15,8 @@ RUN apt-get update && \
 
 RUN npm install --save core-js@^3 
 RUN npm install -g hexo-cli hexo hexo-deployer-git
-RUN cd /home/runner/work/loveser.github.io/loveser.github.io
-RUN ls -al
-RUN uname -a
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["uname -a"]
+
